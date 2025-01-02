@@ -13,15 +13,15 @@ Communication Protocol for MPPT(BDZ Series and EPEVER Series)
 
 3. Functions
   a. READ BAT CHARGING CURRENT:  0x0A
-  b. READ BAT CHARGING VOLT      : 0x07
+  b. READ BAT CHARGING VOLT   : 0x07
 
-  c. READ BAT/LOAD VOLTAGE        : 0x0C 
-  d. READ BAT/LOAD CURRENT        : 0x0D
+  c. READ BAT/LOAD VOLTAGE    : 0x0C 
+  d. READ BAT/LOAD CURRENT    : 0x0D
 
-  e. READ INPUT VOLT                    : 0x0B
+  e. READ INPUT VOLT           : 0x0B
 
-  f. SET BAT CHARGING VOLT          : 0x04
-  g. SET BAT CHARGING CURRENT    : 0x03
+  f. SET BAT CHARGING VOLT     : 0x04
+  g. SET BAT CHARGING CURRENT  : 0x03
 
 4. Reply example: 01 03 02 [data] [data] + [CRC]
 
