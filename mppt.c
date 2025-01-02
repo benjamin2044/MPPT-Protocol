@@ -82,7 +82,7 @@ volatile uint8_t serialReceiveBuffer[7] = {};
 
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart){
 	HAL_UART_Receive_IT(&huart2, (uint8_t *)serialReceiveBuffer, sizeof(serialReceiveBuffer));
-	HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_15); //CAN2_RX_LED
+	HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_15); //RX_LED_TOGGLE for test purpose
 }
 
 void set_MPPT_CC(void){
