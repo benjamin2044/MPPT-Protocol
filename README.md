@@ -1,4 +1,6 @@
-# MPPT BDZ
+
+# MPPT BDZ Series (Read/Write)
+ - Not all MPPTs allow writing mode(Tested on MPPT BDZ-30A, 60A and 80A modules)
 
 1. DataRate = 2400bps, data scale: 0.1
 
@@ -25,7 +27,7 @@
 
 ---
 
-# EPEVER (Read only)
+# EPEVER Series (Read only)
 
 1. DataRate = 115200, data scale: 0.01
 
