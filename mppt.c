@@ -205,7 +205,6 @@ uint16_t read_MPPT_LOAD_A(void){
 #endif
 	osDelay(UART_RX_TIME);
 	return ((serialReceiveBuffer[3] << 8) | serialReceiveBuffer[4]);
-
 }
 
 
