@@ -8,8 +8,7 @@ static void MX_USART2_UART_Init(void);
 
 int main(void)
 {
-	MX_USART2_UART_Init();
-	HAL_UART_Receive_IT(&huart2, serialReceiveBuffer, sizeof(serialReceiveBuffer));
+	//Initialize clock, pheripherals including UART
 	while (1)
 	{
 		//set_MPPT_CC();
