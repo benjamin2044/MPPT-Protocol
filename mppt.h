@@ -1,3 +1,4 @@
+
 /*
  * mppt.h
  *
@@ -9,7 +10,6 @@
 #define SRC_BOP_MPPT_MPPT_H_
 
 #include <stdint.h>
-#include <stdio.h>
 #include <stdbool.h>
 #include "main.h"
 #include "cmsis_os.h"
