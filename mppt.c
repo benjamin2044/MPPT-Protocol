@@ -108,7 +108,7 @@ void set_MPPT_CV(void) {
 
 // Generic function to read MPPT data
 uint16_t read_MPPT_Data(const uint8_t* command) {
-    HAL_UART_Transmit(&huart2, command, sizeof(command), HAL_MAX_DELAY);
+    HAL_UART_Transmit(&huart2, command, sizeof(BDZ_BAT_CV_SET), HAL_MAX_DELAY);
     osDelay(UART_RX_TIME);
     return ((serialReceiveBuffer[3] << 8) | serialReceiveBuffer[4]);
 }
