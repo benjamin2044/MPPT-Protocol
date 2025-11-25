@@ -73,7 +73,6 @@ volatile uint8_t serialReceiveBuffer[7] = {};
 // UART receive complete callback
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
     HAL_UART_Receive_IT(&huart2, (uint8_t *)serialReceiveBuffer, sizeof(serialReceiveBuffer));
-    HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_15); // CAN2_RX_LED
 }
 
 // Set MPPT CC (Charging Current)
@@ -193,3 +192,4 @@ uint16_t read_MPPT_LOAD_A(void) {
     return read_MPPT_Data(EVR_READ_COMMANDS[8]);
 #endif
 }
+
